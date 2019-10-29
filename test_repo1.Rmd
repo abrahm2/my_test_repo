@@ -1,0 +1,23 @@
+---
+title: "test_repo"
+author: "Alex Brahm"
+date: "10/29/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(datasets)
+library(ggplot2)
+```
+
+```{r}
+ggplot(data= mtcars, aes(x= gear, y= mpg))+
+  geom_point()
+
+
+```
